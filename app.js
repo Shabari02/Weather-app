@@ -74,7 +74,7 @@ let weather = {
             </div>
         </div>
       `;
-    if ($("#result-div").children().length > 3) return;
+    if ($("#result-div").children().length >= 3) return;
     $("#result-div").html(x + y);
     $("#simple-search").val('')
   },

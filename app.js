@@ -76,6 +76,7 @@ let weather = {
       `;
     if ($("#result-div").children().length > 3) return;
     $("#result-div").html(x + y);
+    $("#simple-search").val('')
   },
   search: function () {
     this.fetchWeather(document.querySelector("#simple-search").value);
